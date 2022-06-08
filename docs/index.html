@@ -13,20 +13,72 @@
 <script nonce="a5ae2a0d-8d5f-40c9-9605-469a508582c5">(function(w,d){!function(a,e,t,r){a.zarazData=a.zarazData||{},a.zarazData.executed=[],a.zaraz={deferred:[]},a.zaraz.q=[],a.zaraz._f=function(e){return function(){var t=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:t})}};for(const e of["track","set","ecommerce","debug"])a.zaraz[e]=a.zaraz._f(e);a.addEventListener("DOMContentLoaded",(()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r),n=e.getElementsByTagName("title")[0];for(n&&(a.zarazData.t=e.getElementsByTagName("title")[0].text),a.zarazData.w=a.screen.width,a.zarazData.h=a.screen.height,a.zarazData.j=a.innerHeight,a.zarazData.e=a.innerWidth,a.zarazData.l=a.location.href,a.zarazData.r=e.referrer,a.zarazData.k=a.screen.colorDepth,a.zarazData.n=e.characterSet,a.zarazData.o=(new Date).getTimezoneOffset(),a.zarazData.q=[];a.zaraz.q.length;){const e=a.zaraz.q.shift();a.zarazData.q.push(e)}z.defer=!0,z.referrerPolicy="origin",z.src="../../cdn-cgi/zaraz/sd0d9.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData))),t.parentNode.insertBefore(z,t)}))}(w,d,0,"script");})(window,document);
 </script>
 
-<style type="text/css">
-	.ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #fff;
-   }
-   .fa-behance:hover {
-  color: #053eff;
-   }
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z7VGW8P33"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-9Z7VGW8P33');
+</script>
+
+
+
+<style type="text/css">
+	input-field{
+  padding: 0px !important;
+}
+
+.border-line{
+ padding: 0px !important;
+ margin: 0px !important;
+}
+
+:focus{outline: none;}
+
+.col-3{
+  float: center; 
+  width: 100%; 
+  margin: 40px 3%; 
+  position: relative;
+}
+
+input[type="text"]
+{font: 15px/24px "Lato", Arial, sans-serif; 
+  color: #fff; width: 100%; 
+  box-sizing: border-box; 
+  letter-spacing: 1px;
+  width: 100%;
+  display: inline-block;
+  padding: 12px 20px;
+}
+
+
+
+.effect-9 ~ .focus-border:before,
+.effect-9 ~ .focus-border:after{content: ""; position: absolute; top: 0; right: 0; width: 0; height: 2px; background-color: rgb(196, 5, 5); transition: 0.2s; transition-delay: 0.2s;}
+.effect-9 ~ .focus-border:after{top: auto; bottom: 0; right: auto; left: 0; transition-delay: 0.6s;}
+.effect-9 ~ .focus-border i:before,
+.effect-9 ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: rgb(196, 5, 5); transition: 0.2s;}
+.effect-9 ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0; transition-delay: 0.4s;}
+.effect-9:focus ~ .focus-border:before,
+.effect-9:focus ~ .focus-border:after{width: 100%; transition: 0.2s; transition-delay: 0.6s;}
+.effect-9:focus ~ .focus-border:after{transition-delay: 0.2s;}
+.effect-9:focus ~ .focus-border i:before,
+.effect-9:focus ~ .focus-border i:after{height: 100%; transition: 0.2s;}
+.effect-9:focus ~ .focus-border i:after{transition-delay: 0.4s;}
 </style>
+
+
+
 
 </head>
 
 
 <body>
+	
+
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 <div class="container">
 <a class="navbar-brand" href="index.html">UX <span>Dinesh</span> </a>
@@ -284,18 +336,57 @@
 <h2 class="ftco-heading-2">Contact</h2>
 <form action="#">
 <div class="row">
-<div class="col-md-12">
+
+
+<!-- <div class="col-md-12">
 <div class="form-group">
-<input type="text" class="form-control" placeholder="Your Name">
-</div>
-</div>
-<div class="col-md-12">
-<div class="form-group">
-<input type="text" class="form-control" placeholder="Your Email">
+<input type="text" class="form-control effect-9" placeholder="Your Name">
+<span class="focus-border">
+      <i></i>
+    </span>
 </div>
 </div>
 
 <div class="col-md-12">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Your Email">
+</div> -->
+</div>
+
+<!-- <div class="form-group">
+<input type="text" required="required"/>
+<label for="input" class="control-label">Textfield</label><i class="bar"></i>
+</div> -->
+
+<div class="col-3 input-field">
+	<input class="effect-9" type="text" placeholder="Your Name">
+	<span class="focus-border">
+		<i class="border-line"></i>
+	</span>
+</div>
+
+<div class="col-3 input-field">
+	<input class="effect-9" type="text" placeholder="Your Email">
+	<span class="focus-border">
+		<i class="border-line"></i>
+	</span>
+</div>
+
+<div class="col-3 input-field">
+	<input class="effect-9" type="text" placeholder="Your Subject">
+	<span class="focus-border">
+		<i class="border-line"></i>
+	</span>
+</div>
+
+<div class="col-3 input-field">
+	<textarea name="" id="" cols="30" rows="5" class="form-control" class="effect-9" type="text" placeholder="Message"></textarea>
+	<span class="focus-border">
+		<i class="border-line"></i>
+	</span>
+</div>
+
+<!-- <div class="col-md-12">
 <div class="form-group">
 <input type="text" class="form-control" placeholder="Your Subject">
 </div>
@@ -303,9 +394,15 @@
 
 <div class="col-md-12">
 <div class="form-group">
+<input type="text" class="form-control" placeholder="Your Subject">
+</div>
+</div> -->
+
+<!-- <div class="col-md-12">
+<div class="form-group">
 <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
 </div>
-</div>
+</div> -->
 
 <div class="col-md-12">
 <div class="form-group">
@@ -361,6 +458,26 @@ Copyright &copy;<script data-cfasync="false" src="#"></script><script>document.w
 
 			gtag('config', 'UA-23581568-13');
 		</script>
+
+		<!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/22116078.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+		<!--Start of Tawk.to Script-->
+<<!-- script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6291057cb0d10b6f3e746491/1g437qs7i';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script> -->
+<!--End of Tawk.to Script-->
+
+
 </body>
 
 
