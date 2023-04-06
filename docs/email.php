@@ -1,6 +1,6 @@
 <?php
 $name = $_POST['c-name'];
-Print "$name";
+echo $name;
  
 
 ?>
