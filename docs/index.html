@@ -339,13 +339,13 @@ input[type="text"]
 <div class="col-md">
 <div class="ftco-footer-widget mb-4 ml-md-4">
 <h2 class="ftco-heading-2">Contact</h2>
-<form action="#">
+<form action="email.php" method="post">
 <div class="row">
 
 
 <!-- <div class="col-md-12">
 <div class="form-group">
-<input type="text" class="form-control effect-9" placeholder="Your Name">
+<input type="text" class="form-control effect-9" name="c-name" placeholder="Your Name">
 <span class="focus-border">
       <i></i>
     </span>
@@ -354,7 +354,7 @@ input[type="text"]
 
 <div class="col-md-12">
 <div class="form-group">
-<input type="text" class="form-control" placeholder="Your Email">
+<input type="text" class="form-control" name="c-email" placeholder="Your Email">
 </div> -->
 </div>
 
@@ -364,28 +364,28 @@ input[type="text"]
 </div> -->
 
 <div class="col-3 input-field">
-	<input class="effect-9" type="text" placeholder="Your Name">
+	<input class="effect-9" type="text" name="c-name" placeholder="Your Name">
 	<span class="focus-border">
 		<i class="border-line"></i>
 	</span>
 </div>
 
 <div class="col-3 input-field">
-	<input class="effect-9" type="text" placeholder="Your Email">
+	<input class="effect-9" type="text" name="c-email" placeholder="Your Email">
 	<span class="focus-border">
 		<i class="border-line"></i>
 	</span>
 </div>
 
 <div class="col-3 input-field">
-	<input class="effect-9" type="text" placeholder="Your Subject">
+	<input class="effect-9" type="text" name="c-phone" placeholder="Your Subject">
 	<span class="focus-border">
 		<i class="border-line"></i>
 	</span>
 </div>
 
 <div class="col-3 input-field">
-	<textarea name="" id="" cols="30" rows="5" class="form-control" class="effect-9" type="text" placeholder="Message"></textarea>
+	<textarea name="" id="" cols="30" rows="5" class="form-control" class="effect-9" type="text" name="message" placeholder="Message"></textarea>
 	<span class="focus-border">
 		<i class="border-line"></i>
 	</span>
