@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+*/
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -5170,7 +5177,8 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   padding: 7em 0;
-  background: black;
+  /*background: #424242;*/
+  background: #000;
   position: relative; }
   .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
