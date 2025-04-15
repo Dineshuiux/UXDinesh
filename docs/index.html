@@ -17,6 +17,23 @@
 <!-- Google reCaptcha  -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
 <script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -83,7 +100,7 @@ p a:hover
 .effect-9:focus ~ .focus-border i:after{transition-delay: 0.4s;}
 </style>
 </head>
-<body>
+<body onload="startTime()">
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 <div class="container">
 <a class="navbar-brand" href="index.html">UX <span>Dinesh</span> </a>
@@ -130,6 +147,7 @@ p a:hover
 <h3>Welcome</h3>
 <p style="color: #000;">I’m Dinesh, an energetic designer who combines rapid prototyping, interaction, motion, and visual design to transform thorny problems into elegant solutions.</p>
 </div>
+<div id="txt"></div>
 </div>
 <div class="col-md-6 order-md-last ftco-animate d-flex">
 <div class="img w-100" style="background-image:url(images/welcome.jpg);height: 300px;"></div>
